@@ -1,11 +1,10 @@
-let Books = [];
+let Books = JSON.parse(localStorage.getItem('booksData')) || [];
 
 const addBook = () => {
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
   const book = { id: new Date().getTime(), title, author };
-  if (localStorage.getItem('booksData') !== null) {
-    Books = JSON.parse(localStorage.getItem('booksData'));
+  if (Books !== null) {
     Books.push(book);
     const convertedBooks = JSON.stringify(Books);
     localStorage.setItem('booksData', convertedBooks);
@@ -19,9 +18,8 @@ const addBook = () => {
 };
 
 // eslint-disable-next-line no-unused-vars
-function removeBook(id) {
-  const booksData = localStorage.getItem('booksData');
-  const convertedBooks = JSON.parse(booksData);
+const removeBook = (id) => {
+  const convertedBooks = Books;
   const remainingBooks = convertedBooks.filter((book) => book.id !== id);
   const removedBooks = JSON.stringify(remainingBooks);
   localStorage.setItem('booksData', removedBooks);
@@ -29,8 +27,7 @@ function removeBook(id) {
 }
 
 const displayBooks = () => {
-  const booksData = localStorage.getItem('booksData');
-  const convertedBooks = JSON.parse(booksData);
+  const convertedBooks = Books;
   document.getElementById('bookstatus').innerHTML = 'No books added';
   if (convertedBooks && convertedBooks.length === 0) {
     document.getElementById('bookstatus').innerHTML = 'No books added';
