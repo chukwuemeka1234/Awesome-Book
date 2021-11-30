@@ -24,7 +24,7 @@ const removeBook = (id) => {
   const removedBooks = JSON.stringify(remainingBooks);
   localStorage.setItem('booksData', removedBooks);
   window.location.reload();
-}
+};
 
 const displayBooks = () => {
   const convertedBooks = Books;
