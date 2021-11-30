@@ -14,7 +14,7 @@ const addBook = () => {
     const convertedBooks = JSON.stringify(Books);
     localStorage.setItem('booksData', convertedBooks);
     window.location.reload();
-  };
+  }
 };
 
 // eslint-disable-next-line no-unused-vars
@@ -42,7 +42,7 @@ const displayBooks = () => {
    </article></br><hr>`;
     });
     document.getElementById('bookslist').innerHTML = html;
-  };
+  }
 };
 
 window.addEventListener('DOMContentLoaded', displayBooks);
