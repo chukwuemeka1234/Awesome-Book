@@ -36,10 +36,9 @@ Additional description about the project and its features.
 
  **chukwuemeka1234**
 
-- GitHub: [@chukwuemeka1234]()
-- Twitter: [@chukwuemeka1234]()
-- LinkedIn: [@chukwuemeka1234]()
-
+- GitHub: [@chukwuemeka1234](https://github.com/chukwuemeka1234)
+- Twitter: [@avc_victor](https://twitter.com/@avc_victor)
+- LinkedIn: [ani-chukwuemeka](https://linkedin.com/in/ani-chukwuemeka-a65421199/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
