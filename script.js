@@ -1,6 +1,6 @@
 const Books = JSON.parse(localStorage.getItem('booksData')) || [];
 
-class bookClass {
+class Book {
   constructor(title, author, id) {
     this.title = title;
     this.author = author;
@@ -44,21 +44,21 @@ class bookClass {
   };
 }
 
-//eslint-disable-next-line no-unused-vars
+//eslint-disable-next-line no-unused-vars //
 const removeBook = (id) => {
-    const convertedBooks = Books;
-    const remainingBooks = convertedBooks.filter((book) => book.id !== id);
-    const removedBooks = JSON.stringify(remainingBooks);
-    localStorage.setItem('booksData', removedBooks);
-    window.location.reload();
-  };
+  const convertedBooks = Books;
+  const remainingBooks = convertedBooks.filter((book) => book.id !== id);
+  const removedBooks = JSON.stringify(remainingBooks);
+  localStorage.setItem('booksData', removedBooks);
+  window.location.reload();
+};
 
 document.getElementById('addbook').addEventListener('click', () => {
-    const book = new bookClass();
-    book.addBook();
+  const book = new Book();
+  book.addBook();
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-    const book = new bookClass();
-    book.displayBooks();
+  const book = new Book();
+  book.displayBooks();
 });
