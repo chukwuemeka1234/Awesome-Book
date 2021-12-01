@@ -1,9 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container {
   display: flex;
   max-width: 100%;
   flex-direction: column;
   padding-left: 20%;
   padding-right: 20%;
+  margin-top: 2rem;
 }
 
 .awesome-text {
@@ -11,9 +17,45 @@
   display: flex;
   font-size: 2em;
   margin-bottom: 0;
-  margin-left: 2.5em;
   justify-content: center;
-  max-width: 80%;
+}
+
+.books-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 4px solid;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.article-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    width: 100%;
+}
+
+.article-display:nth-child(odd) {
+    background-color: #aaa7a7;
+}
+
+.article-display:nth-child(even) {
+    background-color: #fff;
+}
+
+.remove-btn {
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    box-shadow: 2px 3px;
+    cursor: pointer;
+}
+
+.article-text {
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .form-container {
@@ -51,18 +93,28 @@
   margin-right: auto;
   width: 100%;
   margin-top: 4%;
+  padding: 0.5rem 0;
 }
 
 input {
   width: 100%;
   padding: 2%;
+  border: 3px solid #000;
+}
+
+input::placeholder {
+    border: none;
 }
 
 .button {
   flex: 1;
-  width: 30%;
+  width: 20%;
   color: #000;
   font-weight: 600;
   margin-top: 2%;
   align-self: flex-end;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 3px;
+  cursor: pointer;
 }
