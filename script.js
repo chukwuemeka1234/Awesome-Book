@@ -44,7 +44,7 @@ class Book {
   };
 }
 
-//eslint-disable-next-line no-unused-vars //
+// eslint-disable-next-line no-unused-vars //
 const removeBook = (id) => {
   const convertedBooks = Books;
   const remainingBooks = convertedBooks.filter((book) => book.id !== id);
