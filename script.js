@@ -4,13 +4,17 @@ class Book {
   constructor(title, author, id) {
     this.title = title;
     this.author = author;
-    this.isbn = id;
+    this.id = id;
   }
 
   addBook = () => {
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
-    const book = { id: new Date().getTime(), title, author };
+    let id = 1;
+    if (Books.length > 0) {
+       id = Books[Books.length - 1].id + 1;
+    }
+    const book = { id, title, author };
     if (Books !== null) {
       Books.push(book);
       const convertedBooks = JSON.stringify(Books);
