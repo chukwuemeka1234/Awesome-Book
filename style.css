@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .container {
   display: flex;
@@ -21,41 +21,41 @@
 }
 
 .books-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    border: 4px solid;
-    align-items: center;
-    width: 60%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 4px solid;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .article-display {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.7rem;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  width: 100%;
 }
 
 .article-display:nth-child(odd) {
-    background-color: #aaa7a7;
+  background-color: #aaa7a7;
 }
 
 .article-display:nth-child(even) {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .remove-btn {
-    border: 1px solid;
-    padding: 0.5rem 1rem;
-    box-shadow: 2px 3px;
-    cursor: pointer;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 3px;
+  cursor: pointer;
 }
 
 .article-text {
-    font-weight: 700;
-    font-size: 1.3rem;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .form-container {
@@ -103,7 +103,7 @@ input {
 }
 
 input::placeholder {
-    border: none;
+  border: none;
 }
 
 .button {
