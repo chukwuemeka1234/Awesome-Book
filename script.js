@@ -12,7 +12,7 @@ class Book {
     const author = document.getElementById('author').value;
     let id = 1;
     if (Books.length > 0) {
-       id = Books[Books.length - 1].id + 1;
+      id = Books[Books.length - 1].id + 1;
     }
     const book = { id, title, author };
     if (Books !== null) {
