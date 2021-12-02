@@ -72,7 +72,6 @@ window.addEventListener('DOMContentLoaded', () => {
   dateOutput.innerHTML = JSON.stringify(today.setLocale('en-US').toLocaleString(DateTime.DATETIME_MED));
 });
 
-
 const bookAdd = document.querySelector('.addbook-container');
 const bookDisplay = document.querySelector('.form-container');
 const contactBook = document.querySelector('.contact-container');
