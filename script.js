@@ -61,13 +61,6 @@ document.getElementById('addbook').addEventListener('click', () => {
   book.addBook();
 });
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   const book = new Book();
-//   book.displayBooks();
-// });
-
-//Navigation 
-
 /* global luxon */
 /* eslint no-undef: "error" */
 window.addEventListener('DOMContentLoaded', () => {
