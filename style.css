@@ -62,13 +62,13 @@ li {
 
 .item2 {
   text-align: center;
-  border-left: 2px solid #000
+  border-left: 2px solid #000;
 }
 
 .item3 {
   text-align: center;
   border: none;
-  border-left: 2px solid #000
+  border-left: 2px solid #000;
 }
 
 .headtitle {
@@ -157,7 +157,7 @@ li {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-} 
+}
 
 .date {
   flex: 1;
