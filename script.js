@@ -61,9 +61,60 @@ document.getElementById('addbook').addEventListener('click', () => {
   book.addBook();
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  const book = new Book();
-  book.displayBooks();
-});
+// window.addEventListener('DOMContentLoaded', () => {
+//   const book = new Book();
+//   book.displayBooks();
+// });
 
 //Navigation 
+
+/* global luxon */
+/* eslint no-undef: "error" */
+window.addEventListener('DOMContentLoaded', () => {
+    const book = new Book();
+    book.displayBooks();
+    const { DateTime } = luxon;
+    const today = DateTime.local();
+    const dateOutput = document.getElementById('date');
+    dateOutput.innerHTML = JSON.stringify(today.setLocale('en-US').toLocaleString(DateTime.DATETIME_MED));
+  });
+
+
+const bookAdd = document.querySelector('.addbook-container');
+const bookDisplay = document.querySelector('.form-container');
+const contactBook = document.querySelector('.contact-container');
+const listId = document.getElementById('list-id');
+const addId = document.getElementById('add-id');
+const contactId = document.getElementById('contact-id');
+
+// Added books
+function openBooksContainer() {
+    bookAdd.style.display = 'flex';
+    bookDisplay.style.display = 'none';
+    contactBook.style.display = 'none';
+}
+
+listId.addEventListener('click', openBooksContainer);
+
+// Books display
+function addBookDisplay() {
+    bookAdd.style.display = 'none';
+    bookDisplay.style.display = 'flex';
+    contactBook.style.display = 'none';
+}
+
+addId.addEventListener('click', addBookDisplay);
+
+// Contact
+function contactDisplay() {
+    bookAdd.style.display = 'none';
+    bookDisplay.style.display = 'none';
+    contactBook.style.display = 'block';
+}
+
+contactId.addEventListener('click', contactDisplay);
+
+
+
+
+
