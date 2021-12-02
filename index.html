@@ -10,44 +10,62 @@
 </head>
 
 <body id="body" class="bod">
-<header class="header">
-    <ul class="headerdiv">
-        <li class="listItem item1" ><span class="headtitle">Awesome Books</span> <a href="#sectionOne" class="headlist">List</a></li>
-        <li class="listItem item2" ><a href="#book-form" class="headadd">Add new</a></li>
-        <li class="listItem item3" ><a href="#"class="headcontact">Contact</a></li>
-    </ul>
+    <header class="header">
+        <!-- <ul class="headerdiv">
+            <li class="listItem item1"><span class="headtitle">Awesome Books</span> <a id="list-id"
+                class="headlist">List</a></li>
+            <li class="listItem item2"><a id="add-id" class="headadd">Add new</a></li>
+            <li class="listItem item3" id="contact-id"><a class="headcontact">Contact</a></li>
+        </ul> -->
+        <nav class="headerdiv">
+            <h1 class="headtitle">Awesome Books</h1>
+            <ul class="nav-links">
+              <li id="list-id" class="listItems">List</li>
+              <!-- <li><img src="./image/vertical-image.png" alt="vertical image for separating"></li> -->
+              <li id="add-id" class="listItems">Add new</li>
+              <!-- <li><img src="./image/vertical-image.png" alt="vertical image for separating"></li> -->
+              <li id="contact-id" class="listItems">Contact</li>
+            </ul>
+          </nav>
     </header>
-    <section class="container">
+
+    <div class="date" id="date"></div>
+
+    <section class="addbook-container" id="book-add">
         <h1 class="awesome-text">All awesome Books</h1>
         <div class="books-container" id="bookslist">
             <p id="bookstatus"></p>
         </div>
-        <form class="form-container">
-        <span class="span"></span>
-        <h2 class="titleform">Add a new book</h2>
-        <div class="form-group">
-            <label for="title"></label>
-            <input type="text" placeholder="Title" id="title" /><br><br>
-        </div>
-        <div class="form-group">
-            <label for="author"></label>
-            <input type="text" placeholder="Author" id="author" /><br><br>
-        </div>
-        <button id="addbook" class="button">Add</button>
-    </form>
     </section>
-    <section class="section2">
+
+    <section class="Book-display">
+        <form class="form-container" id="display-book">
+            <h2 class="titleform">Add a new book</h2>
+            <div class="form-group">
+                <label for="title"></label>
+                <input type="text" placeholder="Title" id="title" /><br><br>
+            </div>
+            <div class="form-group">
+                <label for="author"></label>
+                <input type="text" placeholder="Author" id="author" /><br><br>
+            </div>
+            <button id="addbook" class="button">Add</button>
+        </form>
+    </section>
+
+    <section class="contact-container" id="contact-book">
         <h2 class="contactTitle">Contact information</h2>
         <p class="text">Do have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
-    <ul class="contactul">
-        <li class="ulitem">Our e-mail: azeezatlola@gmail.com</li>
-        <li class="ulitem">Our phone number: +2347061222622</li>
-        <li class="ulitem">Our address: Streetname22,84503 City, Country</li>
-    </ul>
+        <ul class="contactul">
+            <li class="ulitem">Our e-mail: azeezatlola@gmail.com</li>
+            <li class="ulitem">Our phone number: +2347061222622</li>
+            <li class="ulitem">Our address: Streetname22,84503 City, Country</li>
+        </ul>
     </section>
-<footer class="footer">
-    <p class="right">Copyright</p>
-</footer>
+
+    <footer class="footer">
+        <p class="right">Copyright</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
     <script src="script.js"></script>
 
