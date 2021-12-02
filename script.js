@@ -61,16 +61,15 @@ document.getElementById('addbook').addEventListener('click', () => {
   book.addBook();
 });
 
-/* global luxon */
-/* eslint no-undef: "error" */
 window.addEventListener('DOMContentLoaded', () => {
-  const book = new Book();
-  book.displayBooks();
+    const book = new Book();
+    book.displayBooks();
+});
+
   const { DateTime } = luxon;
   const today = DateTime.local();
   const dateOutput = document.getElementById('date');
   dateOutput.innerHTML = JSON.stringify(today.setLocale('en-US').toLocaleString(DateTime.DATETIME_MED));
-});
 
 const bookAdd = document.querySelector('.addbook-container');
 const bookDisplay = document.querySelector('.form-container');
@@ -105,3 +104,4 @@ function contactDisplay() {
 }
 
 contactId.addEventListener('click', contactDisplay);
+
