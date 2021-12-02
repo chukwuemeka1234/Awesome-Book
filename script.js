@@ -37,11 +37,10 @@ class Book {
       document.getElementById('bookstatus').innerHTML = '';
       let html = '';
       convertedBooks.forEach((book) => {
-        html += `<article>
-        <h4>${book.title}</h4>
-        <h4>${book.author}</h4>
-        <button data-book-id = "${book.id}" id = "remove-button" onclick="removeBook(${book.id})">Remove</button>
-    </article></br><hr>`;
+        html += `<article class = "article-display">
+        <p class = "article-text">"${book.title}"  by  ${book.author}</p>
+        <button class = "remove-btn" data-book-id = "${book.id}" id = "remove-button" onclick="removeBook(${book.id})">Remove</button>
+    </article>`;
       });
       document.getElementById('bookslist').innerHTML = html;
     }
