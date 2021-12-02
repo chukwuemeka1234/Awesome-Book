@@ -4,6 +4,93 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.bod {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-bottom: 0;
+}
+
+.headerdiv {
+  flex: 1;
+  display: flex;
+  grid-template-columns: 60% 20% 20%;
+  align-items: center;
+  max-width: 100%;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding-left: 2%;
+}
+
+.listItem {
+  flex: 1;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-right: 2px solid #000;
+  height: 50px;
+}
+
+.item1 {
+  flex: 4;
+  align-items: center;
+}
+
+.item2 {
+  text-align: center;
+}
+
+.item3 {
+  text-align: center;
+  border: none;
+}
+
+.headtitle {
+  flex: 1;
+  align-self: center;
+  max-width: 80%;
+}
+
+.headlist {
+  flex: 1;
+  align-self: center;
+  max-width: 20%;
+}
+
+.headadd {
+  flex: 1;
+}
+
+.headcontact {
+  flex: 1;
+}
+
 .container {
   display: flex;
   max-width: 100%;
@@ -118,4 +205,62 @@ input::placeholder {
   padding: 0.5rem 1rem;
   box-shadow: 2px 3px;
   cursor: pointer;
+}
+
+.section2 {
+  display: none;
+  max-width: 100%;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 0;
+  margin-bottom: 8%;
+}
+
+.contactTitle {
+  flex: 1;
+  display: flex;
+  font-size: 2em;
+  margin-bottom: 0;
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  flex: 1;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.contactul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ulitem {
+  flex: 1;
+  line-height: 26px;
+}
+
+.footer {
+  flex: 1;
+  display: flex;
+  max-width: 100%;
+}
+
+.right {
+  flex: 1;
+  max-width: 100%;
+  border: 2px solid #000;
+  align-self: center;
+  border-radius: 4px;
+  padding: 1% 0 2% 1%;
 }
