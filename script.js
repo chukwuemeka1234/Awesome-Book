@@ -65,3 +65,5 @@ window.addEventListener('DOMContentLoaded', () => {
   const book = new Book();
   book.displayBooks();
 });
+
+//Navigation 
