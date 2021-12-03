@@ -26,6 +26,8 @@ class Book {
       localStorage.setItem('booksData', convertedBooks);
       window.location.reload();
     }
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
   };
 
   displayBooks = () => {
@@ -42,7 +44,7 @@ class Book {
         <button class = "remove-btn" data-book-id = "${book.id}" id = "remove-button" onclick="removeBook(${book.id})">Remove</button>
     </article>`;
       });
-      document.getElementById('bookslist').innerHTML = html;
+      document.getElementById('bookstatus').innerHTML = html;
     }
   };
 }
@@ -58,50 +60,52 @@ const removeBook = (id) => {
 
 document.getElementById('addbook').addEventListener('click', () => {
   const book = new Book();
+  book.displayBooks();
   book.addBook();
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-    const book = new Book();
-    book.displayBooks();
+  const book = new Book();
+  book.displayBooks();
 });
 
-  const { DateTime } = luxon;
-  const today = DateTime.local();
-  const dateOutput = document.getElementById('date');
-  dateOutput.innerHTML = JSON.stringify(today.setLocale('en-US').toLocaleString(DateTime.DATETIME_MED));
+const d = new Date();
+document.getElementById('date').innerHTML = d;
 
-const bookAdd = document.querySelector('.addbook-container');
-const bookDisplay = document.querySelector('.form-container');
-const contactBook = document.querySelector('.contact-container');
-const listId = document.getElementById('list-id');
-const addId = document.getElementById('add-id');
-const contactId = document.getElementById('contact-id');
+document.getElementById('bookstatus').style.display = 'block';
+document.getElementById('awesome-text').style.display = 'block';
+document.getElementById('add-book').style.display = 'none';
+document.getElementById('contact').style.display = 'none';
+document.getElementById('list').style.color = 'blue';
 
-// Added books
-function openBooksContainer() {
-  bookAdd.style.display = 'flex';
-  bookDisplay.style.display = 'none';
-  contactBook.style.display = 'none';
-}
 
-listId.addEventListener('click', openBooksContainer);
+document.getElementById('add-new').addEventListener('click', () => {
+  document.getElementById('add-book').style.display = 'block';
+  document.getElementById('bookstatus').style.display = 'none';
+  document.getElementById('awesome-text').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
+  document.getElementById('add-new').style.color = 'blue';
+  document.getElementById('list').style.color = 'black';
+  document.getElementById('contact-click').style.color = 'black';
+});
 
-// Books display
-function addBookDisplay() {
-  bookAdd.style.display = 'none';
-  bookDisplay.style.display = 'flex';
-  contactBook.style.display = 'none';
-}
+document.getElementById('list').addEventListener('click', () => {
+  window.location.reload();
+  document.getElementById('add-book').style.display = 'none';
+  document.getElementById('bookstatus').style.display = 'block';
+  document.getElementById('awesome-text').style.display = 'block';
+  document.getElementById('contact').style.display = 'none';
+  document.getElementById('add-new').style.color = 'black';
+  document.getElementById('list').style.color = 'blue';
+  document.getElementById('contact-click').style.color = 'black';
+});
 
-addId.addEventListener('click', addBookDisplay);
-
-// Contact
-function contactDisplay() {
-  bookAdd.style.display = 'none';
-  bookDisplay.style.display = 'none';
-  contactBook.style.display = 'block';
-}
-
-contactId.addEventListener('click', contactDisplay);
-
+document.getElementById('contact-click').addEventListener('click', () => {
+  document.getElementById('add-book').style.display = 'none';
+  document.getElementById('bookstatus').style.display = 'none';
+  document.getElementById('awesome-text').style.display = 'none';
+  document.getElementById('contact').style.display = 'block';
+  document.getElementById('add-new').style.color = 'black';
+  document.getElementById('list').style.color = 'black';
+  document.getElementById('contact-click').style.color = 'blue';
+});
