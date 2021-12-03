@@ -9,54 +9,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="body" class="bod">
-    <header class="header">
-    <ul class="headerdiv">
-        <li class="listItem item1" id="list-id"><span class="headtitle">Awesome Books</span> <a href="#addbook-container" class="headlist">List</a></li>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li class="navl"><a id="contact-click" href="#home">Contact</a></li>
+            <li><a href="#news" id="add-new">Add New</a></li>
+            <li><a href="#contact" id="list">List</a></li>
+            <li id="awesome-logo"><a href="#about">Awesome Book</a></li>
+        </ul>
+    </nav>
+    <div id="div-date">
+        <p id="date"></p>
+    </div>
+    <section class="container">
 
-        <li class="listItem item2" ><a href="#display-book"  id="add-id" class="headadd">Add new</a></li>
+        <h1 class="awesome-text" id="awesome-text">All awesome Books</h1>
+        <div class="bookstatus" id="bookstatus"></div>
 
-        <li class="listItem item3" ><a href="#contact-container" id="contact-id" class="headcontact">Contact</a></li>
-    </ul>
-    </header>
+        <div id="add-book">
+            <form class="form-container">
+                <h2 class="titleform">Add a new book</h2>
+                <div class="form-group">
+                    <label for="title"></label>
+                    <input type="text" placeholder="Title" id="title" /><br><br>
+                </div>
+                <div class="form-group">
+                    <label for="author"></label>
+                    <input type="text" placeholder="Author" id="author" /><br><br>
+                </div>
+                <button id="addbook" class="button">Add</button>
+            </form>
+        </div>
 
-    <div class="date" id="date"></div>
-
-    <section class="addbook-container" id="book-add">
-        <h1 class="awesome-text">All awesome Books</h1>
-        <div class="books-container" id="bookslist">
-            <p id="bookstatus"></p>
+        <div class="contact-container" id="contact">
+            <h2 class="contactTitle">Contact information</h2>
+            <p class="text">Do have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+            <ul class="contactul">
+                <li class="ulitem">Our e-mail: azeezatlola@gmail.com</li>
+                <li class="ulitem">Our phone number: +2347061222622</li>
+                <li class="ulitem">Our address: Streetname22,84503 City, Country</li>
+            </ul>
         </div>
     </section>
-
-    <section class="Book-display">
-        <form class="form-container" id="display-book">
-            <h2 class="titleform">Add a new book</h2>
-            <div class="form-group">
-                <label for="title"></label>
-                <input type="text" placeholder="Title" id="title" /><br><br>
-            </div>
-            <div class="form-group">
-                <label for="author"></label>
-                <input type="text" placeholder="Author" id="author" /><br><br>
-            </div>
-            <button id="addbook" class="button">Add</button>
-        </form>
-    </section>
-
-    <section class="contact-container" id="contact-book">
-        <h2 class="contactTitle">Contact information</h2>
-        <p class="text">Do have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
-        <ul class="contactul">
-            <li class="ulitem">Our e-mail: azeezatlola@gmail.com</li>
-            <li class="ulitem">Our phone number: +2347061222622</li>
-            <li class="ulitem">Our address: Streetname22,84503 City, Country</li>
-        </ul>
-    </section>
-
-    <footer class="footer">
-        <p class="right">Copyright</p>
-    </footer> 
+    <footer class="copyright">
+        <p>Copyright</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
     <script src="script.js"></script>
 
