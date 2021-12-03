@@ -4,95 +4,7 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-}
-
-.bod {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-.header {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-bottom: 0;
-}
-
-.headerdiv {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 30px;
-  border: 1px solid black;
-  margin: 1rem;
-  width: 100%;
-}
-
-.listItem {
-  flex: 1;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 50px;
-  padding: 2rem;
-}
-
-.item1 {
-  flex: 4;
-  align-items: center;
-}
-
-.item2 {
-  text-align: center;
-  border-left: 2px solid #000;
-}
-
-.item3 {
-  text-align: center;
-  border: none;
-  border-left: 2px solid #000;
-}
-
-.headtitle {
-  flex: 1;
-  font-size: 20px;
-  align-self: center;
-  max-width: 80%;
-}
-
-.headlist {
-  flex: 1;
-  align-self: center;
-  max-width: 20%;
-}
-
-.headadd {
-  flex: 1;
-}
-
-.headcontact {
-  flex: 1;
-}
-
-.addbook-container {
+.container {
   display: flex;
   max-width: 100%;
   flex-direction: column;
@@ -104,22 +16,23 @@ li {
 .awesome-text {
   flex: 1;
   display: flex;
-  font-size: 2em;
-  margin-bottom: 0;
-  text-align: center;
-  max-width: 80%;
-  margin-left: 23%;
+  font-size: 2.5em;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.books-container {
-  flex: 1;
+.bookstatus {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   border: 4px solid;
-  border-radius: 5px;
   align-items: center;
-  width: 85%;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .article-display {
@@ -157,15 +70,7 @@ li {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.date {
-  flex: 1;
-  margin-left: auto;
-  margin-right: 2%;
-  font-size: 1.2em;
-  font-weight: 600;
-  margin-bottom: 0;
+  margin-top: 13%;
 }
 
 .titleform {
@@ -209,62 +114,76 @@ input::placeholder {
   cursor: pointer;
 }
 
+.copyright {
+  width: 97%;
+  margin: 5px 5px;
+  padding-left: 15px;
+  overflow: hidden;
+  border: 4px solid black;
+  bottom: 5px;
+  position: absolute;
+  left: 25px;
+  padding: 1rem;
+}
+
 .contact-container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-top: 0;
-  margin-bottom: 8%;
+  margin: 0 auto;
+  margin-top: 10%;
 }
 
 .contactTitle {
-  flex: 1;
-  display: flex;
-  font-size: 2em;
-  margin-bottom: 0;
-  justify-content: center;
-  max-width: 80%;
-  margin-left: 6rem;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1.7rem;
 }
 
 .text {
-  flex: 1;
-  font-size: 1.2em;
-  font-weight: 600;
-  justify-content: center;
-  margin-left: 23rem;
-  margin-top: 3%;
+  font-size: 1.3rem;
 }
 
 .contactul {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 26rem;
-  margin-top: 3%;
+  padding-top: 3rem;
+  margin-left: 5rem;
+  font-size: 1.3rem;
 }
 
-.ulitem {
-  flex: 1;
-  line-height: 26px;
+.nav-list {
+  width: 98%;
+  list-style-type: none;
+  margin: 5px 5px;
+  padding: 0;
+  overflow: hidden;
+  border: 4px solid black;
 }
 
-.footer {
-  flex: 1;
-  display: flex;
-  margin-top: 8%;
+.nav-list li {
+  float: right;
+  border-right: 4px solid #000;
+}
+
+.nav-list li:last-child {
+  border-right: none;
+}
+
+.nav-list li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 76px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#awesome-logo {
+  float: left;
+  font-size: 1.9rem;
+}
+
+#div-date {
   width: 100%;
 }
 
-.right {
-  flex: 1;
-  max-width: 100%;
-  border: 2px solid #000;
-  align-self: center;
-  border-radius: 4px;
-  padding: 1% 0 2% 1%;
+#date {
+  float: right;
+  margin-right: 20px;
 }
