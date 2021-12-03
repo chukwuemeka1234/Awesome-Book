@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://chukwuemeka1234.github.io/Awesome-Book/)
 
 
 ## Get a copy

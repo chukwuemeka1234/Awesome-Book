@@ -10,25 +10,51 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="nav-list">
+            <li class="navl"><a id="contact-click" href="#home">Contact</a></li>
+            <li><a href="#news" id="add-new">Add New</a></li>
+            <li><a href="#contact" id="list">List</a></li>
+            <li id="awesome-logo"><a href="#about">Awesome Book</a></li>
+        </ul>
+    </nav>
+    <div id="div-date">
+        <p id="date"></p>
+    </div>
     <section class="container">
-        <h1 class="awesome-text">All awesome Books</h1>
-        <div class="books-container" id="bookslist">
-            <p id="bookstatus"></p>
+
+        <h1 class="awesome-text" id="awesome-text">All awesome Books</h1>
+        <div class="bookstatus" id="bookstatus"></div>
+
+        <div id="add-book">
+            <form class="form-container">
+                <h2 class="titleform">Add a new book</h2>
+                <div class="form-group">
+                    <label for="title"></label>
+                    <input type="text" placeholder="Title" id="title" /><br><br>
+                </div>
+                <div class="form-group">
+                    <label for="author"></label>
+                    <input type="text" placeholder="Author" id="author" /><br><br>
+                </div>
+                <button id="addbook" class="button">Add</button>
+            </form>
         </div>
-        <form class="form-container">
-        <span class="span"></span>
-        <h2 class="titleform">Add a new book</h2>
-        <div class="form-group">
-            <label for="title"></label>
-            <input type="text" placeholder="Title" id="title" /><br><br>
+
+        <div class="contact-container" id="contact">
+            <h2 class="contactTitle">Contact information</h2>
+            <p class="text">Do have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+            <ul class="contactul">
+                <li class="ulitem">Our e-mail: azeezatlola@gmail.com</li>
+                <li class="ulitem">Our phone number: +2347061222622</li>
+                <li class="ulitem">Our address: Streetname22,84503 City, Country</li>
+            </ul>
         </div>
-        <div class="form-group">
-            <label for="author"></label>
-            <input type="text" placeholder="Author" id="author" /><br><br>
-        </div>
-        <button id="addbook" class="button">Add</button>
-    </form>
     </section>
+    <footer class="copyright">
+        <p>Copyright</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
     <script src="script.js"></script>
 
 </body>
