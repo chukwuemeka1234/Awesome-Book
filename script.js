@@ -78,7 +78,6 @@ document.getElementById('add-book').style.display = 'none';
 document.getElementById('contact').style.display = 'none';
 document.getElementById('list').style.color = 'blue';
 
-
 document.getElementById('add-new').addEventListener('click', () => {
   document.getElementById('add-book').style.display = 'block';
   document.getElementById('bookstatus').style.display = 'none';
